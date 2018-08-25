@@ -1,0 +1,29 @@
+<p>This is the partial for view 1.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <label name="test">Votre Test</label>
+            <input type="text" name="test" class="form-group" ng-model="test">
+            <p>{{ message }}</p>
+        </div>
+    </div>
+    <ul>
+        <li ng-repeat="article in articles">
+            <label>{{article.name}}</label>
+            <input ng-model="article.price">
+            <input type="number" ng-model="article.quantite">
+        </li>
+    </ul>
+    <b ng-bind="total()"></b>
+    <p>Remise est  : {{ remise }}</p>
+    <p>
+    <b ng-bind="final()"> </b>
+    </p>
+<p>
+
+            {{greeting}}
+            <span>{{greeting | reverse: true}}</span>
+
+
+</p>
+</div>
